@@ -43,3 +43,13 @@ C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/{usernam
 * Type `y` if it does match, or `return` if it doesn't.
 
 * If you want to copy directories, append the recursive flag `-r`.
+
+## Notification Monitoring
+For Ubuntu(20.04):
+Use `inotifywait` to monitor files added to directory from `pscp`:
+```bash
+sudo apt-get install inotifywait-tools
+```
+See `watch-example.sh` for a template script for usage of `inotifywait`.*
+
+*Note: It's preferable to use `dunst` for notifications, but `notify-send` works decently too.
