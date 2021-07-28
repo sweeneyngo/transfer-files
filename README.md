@@ -52,4 +52,16 @@ sudo apt-get install inotifywait-tools
 ```
 See `watch-example.sh` for a template script for usage of `inotifywait`.*
 
+Ensure it's executable, and run as such:
+
+```bash
+sudo chmod u+x watch-example.sh
+./watch-example.sh
+```
+
+If on `openbox`, add this to your `autostart` so it can run on startup:
+```bash
+sh ~/path/to/script/watch-example.sh &
+```
+
 *Note: It's preferable to use `dunst` for notifications, but `notify-send` works decently too.
