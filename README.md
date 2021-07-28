@@ -34,7 +34,7 @@ cd \windows\system32
 c:\pscp
 ```
 * To transfer a file to Linux machine, make sure to load Command Prompt (`cmd`) using Run (`CTRL+R`) or through searching it.
-* Ensure that you know the following: username, hostname, file_path, new_file_path
+* Ensure that you know the following: username, hostname (for now, the machine's IP address will suffice), file_path, new_file_path
 ```bash
 C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/{username}/{new_file_path}
 ```
