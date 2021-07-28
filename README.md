@@ -44,6 +44,12 @@ C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/{usernam
 
 * If you want to copy directories, append the recursive flag `-r`.
 
+## Linux to Windows
+Remember that keywords are swapped, since you're connecting to the Windows machine.
+```bash
+scp /home/username/{file_path} {username}@{hostname}:/C:/Users/{username}/{new_file_path}
+```
+
 ## Notification Monitoring
 For Ubuntu(20.04):
 Use `inotifywait` to monitor files added to directory from `pscp`:
