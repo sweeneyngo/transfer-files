@@ -40,3 +40,5 @@ C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/{usernam
 * If this is the first transfer, it needs to cache your Linux machine's host key, so check if the key fingerprint matches.
 * Usually, it'll try to display the `ssh-ed25519`, so consult that fingerprint first.
 * Type `y` if it does match, or `return` if it doesn't.
+
+* If you want to copy directories, append the recursive flag `-r`.
