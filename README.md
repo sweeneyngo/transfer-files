@@ -27,8 +27,7 @@ nmcli -p device show
 for i in /etc/ssh/*.pub; do echo; echo $i; ssh-keygen -lf $i; done; echo
 ```
 
-* To transfer a file to Linux machine
-
+* To transfer a file to Linux machine, make sure to load Command Prompt (`cmd`) using Run (`CTRL+R`) or through searching it.
 ```bash
 C:\Windows\System32> c:\pscp C:\path\to\file username@hostname:/home/username/path/to/file
 ```
