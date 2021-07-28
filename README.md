@@ -27,6 +27,7 @@ nmcli -p device show
 for i in /etc/ssh/*.pub; do echo; echo $i; ssh-keygen -lf $i; done; echo
 ```
 
+Transferring a file:
 * Check if pscp is working
 ```bash
 cd \windows\system32
