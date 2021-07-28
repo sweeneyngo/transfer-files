@@ -35,7 +35,7 @@ c:\pscp
 * To transfer a file to Linux machine, make sure to load Command Prompt (`cmd`) using Run (`CTRL+R`) or through searching it.
 * Ensure that you know the following: username, hostname, file_path, new_file_path
 ```bash
-C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/username/{new_file_path}
+C:\Windows\System32> c:\pscp C:\{file_path} {username}@{hostname}:/home/{username}/{new_file_path}
 ```
 * If this is the first transfer, it needs to cache your Linux machine's host key, so check if the key fingerprint matches.
 * Usually, it'll try to display the `ssh-ed25519`, so consult that fingerprint first.
